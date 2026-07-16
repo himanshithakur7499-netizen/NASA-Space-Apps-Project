@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safety First Navigation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<h1>🛡 Safety First Navigation</h1>
+
+<div id="map"></div>
+
+<div class="controls">
+    <select id="hazardType">
+        <option value="No Streetlight">No Streetlight</option>
+        <option value="Unsafe Area">Unsafe Area</option>
+        <option value="Stray Animals">Stray Animals</option>
+        <option value="Road Damage">Road Damage</option>
+    </select>
+    <button onclick="getSafetyScore()">Check Safety Score</button>
+</div>
+
+<h2 id="score"></h2>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+var map = L.map('map').setView([28.6139, 77.2090], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+}).addTo(map);
+
+map.on('click', function(e) {
+    var hazardType = document.getElementById("hazardType").value;
+
+    L.marker(e.latlng).addTo(map)
+        .bindPopup(hazardType)
+        .openPopup();
+
+    fetch('/add_hazard', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            lat: e.latlng.lat,
+            lng: e.latlng.lng,
+            type: hazardType
+        })
+    });
+});
+
+function loadHazards() {
+    fetch('/get_hazards')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(function(h) {
+            L.circleMarker([h[0], h[1]], {
+                radius: 8,
+                color: "red"
+            }).addTo(map).bindPopup(h[2]);
+        });
+    });
+}
+
+function getSafetyScore() {
+    fetch('/safety_score')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("score").innerHTML =
+            "Safety Score: " + data.score + " / 10";
+    });
+}
+
+loadHazards();
+</script>
+
+</body>
+</html>
