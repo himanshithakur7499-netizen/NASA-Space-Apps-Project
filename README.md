@@ -64,3 +64,15 @@ This project was developed as part of the **NASA Space Apps Challenge** in a tea
 **Himanshi Thakur**
 
 ⭐ If you like this project, don't forget to star the repository!
+
+
+## 📸 Project Screenshots
+
+### Home Page
+![Home Page](scrpngeenshots/home.)
+
+### Weather Search
+![Weather Search](screenshots/search.png)
+
+### Weather Result
+![Weather Result](screenshots/result.png)
