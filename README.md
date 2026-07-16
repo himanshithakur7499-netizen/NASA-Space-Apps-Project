@@ -52,8 +52,7 @@ https://github.com/himanshithakur7499-netizen/NASA-Space-Apps-Project/blob/main/
 https://github.com/himanshithakur7499-netizen/NASA-Space-Apps-Project/blob/main/screenshots/Screenshot%202026-07-16%20113152.png
 
 ### 🌤️ Weather Result
-
-![Weather Result](screenshots/weather-result.png)
+https://github.com/himanshithakur7499-netizen/NASA-Space-Apps-Project/blob/main/screenshots/Screenshot%202026-07-16%20110429.png
 
 ---
 
