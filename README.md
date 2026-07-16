@@ -66,12 +66,4 @@ This project was developed as part of the **NASA Space Apps Challenge** in a tea
 ⭐ If you like this project, don't forget to star the repository!
 
 
-## 📸 Project Screenshots
 
-### Home Page
-Screenshot 2026-07-16 113014.png
-### Weather Search
-
-
-### Weather Result
-![Weather Result](screenshots/result.png)
