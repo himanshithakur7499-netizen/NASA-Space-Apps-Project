@@ -69,10 +69,9 @@ This project was developed as part of the **NASA Space Apps Challenge** in a tea
 ## 📸 Project Screenshots
 
 ### Home Page
-![Home Page](scrpngeenshots/home.)
-
+Screenshot 2026-07-16 113014.png
 ### Weather Search
-![Weather Search](screenshots/search.png)
+
 
 ### Weather Result
 ![Weather Result](screenshots/result.png)
