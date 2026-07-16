@@ -46,7 +46,7 @@ NASA-Space-Apps-Project/
 
 ### 🏠 Home Page
 
-![Home Page](screenshots/home.png)
+https://github.com/himanshithakur7499-netizen/NASA-Space-Apps-Project/blob/main/screenshots/Screenshot%202026-07-16%20113014.png
 
 ### 🔍 Weather Search
 
