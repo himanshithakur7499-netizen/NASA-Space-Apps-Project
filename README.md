@@ -1,69 +1,132 @@
 # 🌍 NASA Space Apps Project – Weather Identification System
 
 ## 📌 Project Overview
-This project was developed as part of the **NASA Space Apps Challenge**. The application helps users identify weather conditions by integrating real-time weather data from the OpenWeather API. It provides an interactive interface to check weather information and supports better environmental awareness.
 
-## 🚀 Features
+This project was developed as part of the **NASA Space Apps Challenge**. The application helps users identify real-time weather conditions using the **OpenWeather API**. It provides an interactive and user-friendly interface to search weather information for different locations, supporting environmental awareness through accurate weather data.
+
+---
+
+## ✨ Features
+
 - 🌤️ Real-time weather information
-- 📍 Search weather by location
+- 📍 Search weather by city/location
 - 🌡️ Temperature, humidity, and weather conditions
 - 💨 Wind speed details
-- 📱 User-friendly and responsive interface
-- 🔄 Live data using OpenWeather API
+- 📱 Responsive and user-friendly interface
+- 🔄 Live weather updates using OpenWeather API
+
+---
 
 ## 🛠️ Tech Stack
-- HTML
-- CSS
+
+- HTML5
+- CSS3
 - JavaScript
 - Python
 - OpenWeather API
 
+---
+
 ## 📂 Project Structure
-```
-Hackathon project/
+
+```text
+NASA-Space-Apps-Project/
+│── screenshots/
 │── index.html
 │── style.css
 │── script.js
 │── backend.py
 │── users.json
+│── README.md
 ```
 
+---
+
+## 📸 Project Screenshots
+
+### 🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+### 🔍 Weather Search
+
+![Weather Search](screenshots/weather-search.png)
+
+### 🌤️ Weather Result
+
+![Weather Result](screenshots/weather-result.png)
+
+---
+
 ## ⚙️ Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/himanshithakur7499-netizen/NASA-Space-Apps-Project.git
-   ```
 
-2. Navigate to the project folder:
-   ```bash
-   cd NASA-Space-Apps-Project
-   ```
+### 1. Clone the repository
 
-3. Install the required Python packages.
+```bash
+git clone https://github.com/himanshithakur7499-netizen/NASA-Space-Apps-Project.git
+```
 
-4. Add your own OpenWeather API key.
+### 2. Navigate to the project folder
 
-5. Run:
-   ```bash
-   python backend.py
-   ```
+```bash
+cd NASA-Space-Apps-Project
+```
+
+### 3. Install the required Python packages
+
+```bash
+pip install -r requirements.txt
+```
+
+*(If you don't have a `requirements.txt` file, install the required libraries manually.)*
+
+### 4. Add your OpenWeather API key
+
+Replace the placeholder API key with your own valid OpenWeather API key.
+
+### 5. Run the application
+
+```bash
+python backend.py
+```
+
+---
 
 ## 🌐 API Used
+
 - OpenWeather API
 
+---
+
 ## 👥 Team Project
-This project was developed as part of the **NASA Space Apps Challenge** in a team environment.
+
+This project was developed as part of the **NASA Space Apps Challenge** in a collaborative team environment.
+
+---
 
 ## 📈 Future Improvements
-- AI-based weather prediction
-- Interactive weather maps
-- Weather alerts and notifications
-- Historical weather analysis
+
+- 🤖 AI-based weather prediction
+- 🗺️ Interactive weather maps
+- 🔔 Weather alerts and notifications
+- 📊 Historical weather analysis
+- 📍 GPS-based weather detection
+- 🌐 Multi-language support
+- 📱 Mobile-friendly user interface
+- 📅 7-day weather forecast
+
+---
 
 ## 👩‍💻 Author
+
 **Himanshi Thakur**
 
-⭐ If you like this project, don't forget to star the repository!
+GitHub: https://github.com/himanshithakur7499-netizen
 
+---
 
+## ⭐ Support
 
+If you found this project useful, consider giving it a ⭐ on GitHub!
+
+Thank you for visiting this repository.
